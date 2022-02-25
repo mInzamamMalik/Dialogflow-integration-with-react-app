@@ -2,6 +2,9 @@ import express from "express";
 import cors from "cors";
 import dialogflow from '@google-cloud/dialogflow';
 
+import path from 'path';
+const __dirname = path.resolve();
+
 const sessionClient = new dialogflow.SessionsClient();
 
 const app = express();
