@@ -6,7 +6,6 @@ const axios = require('axios');
 
 function App() {
 
-
   const [text, setText] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -20,7 +19,8 @@ function App() {
       return [{ sender: "user", text: text }, ...prev];
     });
 
-    axios.post(`http://localhost:7001/talktochatbot`, {
+    // axios.post(`http://localhost:7001/talktochatbot`, { // develpment
+    axios.post(`/talktochatbot`, {
       text: text
     })
       .then((response) => {
