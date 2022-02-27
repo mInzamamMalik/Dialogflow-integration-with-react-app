@@ -1,0 +1,7 @@
+{
+  "name": "Dialogflow-integration-with-react-app",
+  "description": "An Example of how to connect dialogflow agent with React.js app",
+  "repository": "https://github.com/malikasinger1/Dialogflow-integration-with-react-app",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["Dialogflow", "react", "google_application_credentials"]
+}
