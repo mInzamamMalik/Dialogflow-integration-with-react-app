@@ -19,8 +19,11 @@ function App() {
       return [{ sender: "user", text: text }, ...prev];
     });
 
-    // axios.post(`http://localhost:7001/talktochatbot`, { // develpment
-    axios.post(`/talktochatbot`, {
+
+    const dev = "http://localhost:7001"
+    const baseUrl = (window.location.hostname.split(":")[0] === "localhost") ? dev : "";
+
+    axios.post(`${baseUrl}/talktochatbot`, {
       text: text
     })
       .then((response) => {

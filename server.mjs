@@ -1,8 +1,10 @@
 import express from "express";
 import cors from "cors";
 import dialogflow from '@google-cloud/dialogflow';
-
+import gcHelper from "google-credentials-helper"
 import path from 'path';
+
+gcHelper(true);
 const __dirname = path.resolve();
 
 const sessionClient = new dialogflow.SessionsClient();
